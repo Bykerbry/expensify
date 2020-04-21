@@ -25,7 +25,12 @@ store.dispatch(addExpense({
     createdAt: 250000
 }))
 
-store.dispatch(setTextFilter('w'))
+store.dispatch(addExpense({
+    description: 'Electric bill',
+    note: 'April',
+    amount: 10000,
+    createdAt: 500000
+}))
 
 const state = store.getState()
 const visible = getVisibleExpenses(state.expenses, state.filters)
