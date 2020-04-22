@@ -20,7 +20,6 @@ const EditExpensePage = (props) => {
             }}>Remove</button>
         </div>
     )
-
 }
 
 
